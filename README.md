@@ -1,6 +1,6 @@
-## Tout d'abord, il faut demander la base de donnée à Youtube, voici les étapes à suivre. 
+## Tout d'abord, il faut demander la base de données à Youtube, voici les étapes à suivre. 
 1) Aller sur le site **Google Takeout** ;
-2) Cliquer sur **"Tout désectionner"** ;
+2) Cliquer sur **"Tout désélectionner"** ;
 3) Cocher **YouTube et YouTube Music** ;
 4) Aller dans **"Formats multiples"** et sélectionner **"JSON"** pour le format de l'historique ;
 5) Cliquer sur **"Étape suivante"** puis **"Créer une exportation"**
@@ -45,7 +45,7 @@ def trouver_et_charger_historique(racine):
     with open(chemin_final, 'r', encoding='utf-8') as f:
         return json.load(f)
 ```
-# 2. Le TOP 10 des châines que l'on regarde le plus. 
+# 2. Le TOP 10 des chaînes que l'on regarde le plus. 
 ### On utilise le dossier avec l'historique de nos visionnages. 
 ```
 data = trouver_et_charger_historique(dossier_racine)
@@ -156,7 +156,7 @@ if fichiers_abos:
     def verifier_si_abonne(nom):
         if str(nom).lower() in liste_abos:
             return 'Vidéos de mes Abonnements'
-        return 'Vidéos visionées sans être abonné'
+        return 'Vidéos visionnées sans être abonné'
     
     df['Source_Visionnage'] = df['Chaine'].apply(verifier_si_abonne)
     stats_fidelite = df['Source_Visionnage'].value_counts()
@@ -173,7 +173,7 @@ if fichiers_abos:
     plt.title("Part des abonnements dans mon historique", fontsize=15)
     plt.show()
 ```
-# 5. Nombres d'heures convertit en nombre de jours de visionnage sur Youtube depuis le début
+# 5. Nombres d'heures converti en nombre de jours de visionnage sur Youtube depuis le début
 ```
 fichiers = glob.glob(os.path.join(dossier_racine, '**', 'watch-history.json'), recursive=True)
 if fichiers:
@@ -360,7 +360,7 @@ if not df_2025_propre.empty:
     
     print("="*50)
     print(f"La chaîne la plus regardée en  2025 est : {top_1_2025}")
-    print(f"Tu l'as regardé : {nb_vues_top1} fois")
+    print(f"Tu l'as regardée : {nb_vues_top1} fois")
     print("="*50)
 else:
     print("Aucun nom de chaîne trouvé pour 2025.")
