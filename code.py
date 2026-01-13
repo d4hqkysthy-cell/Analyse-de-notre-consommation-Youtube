@@ -10,7 +10,7 @@ import json
 import glob
 
 ### 1. Chargement de la base de données de manière universelle
-dossier_racine = '/Users/elia/Desktop/Takeout/' 
+dossier_racine = 'VOTRE CHEMIN D'ACCES VERS LE DOSSIER TAKEOUT' 
 
 def trouver_et_charger_historique(racine):
     # On cherche le fichier watch-history.json n'importe où dans le dossier
