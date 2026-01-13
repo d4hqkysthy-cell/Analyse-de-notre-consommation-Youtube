@@ -1,3 +1,6 @@
+# Analyse de notre consommation Youtube 
+### Mattéo CORREGER et Elia HUREL 
+
 ## Tout d'abord, il faut demander la base de données à Youtube, voici les étapes à suivre. 
 1) Aller sur le site **Google Takeout** ;
 2) Cliquer sur **"Tout désélectionner"** ;
